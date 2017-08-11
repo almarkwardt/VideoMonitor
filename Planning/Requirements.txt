@@ -1,0 +1,39 @@
+The requirements for the video monitoring system have been transcribed from my
+notebook and condensed below.
+
+REQ-1: Camera units shall be able to discover storage units on the
+       local network without human intervention.
+
+REQ-2: Camera units and storage units on the local network shall be
+       configurable via a web interface.
+
+REQ-3: Camera units shall attempt to store recorded data to multiple storage
+       units, as specified by a configurable minimum and maximum number.
+
+REQ-4: Camera units shall make a "best effort" when insufficient storage units
+       are available, storing information in as many places as are available
+       at the time.
+
+REQ-5: Data that was previously stored to an insufficient number of storage
+       units shall be immediately transmitted to other storage units as they
+       become available until the minimum storage requirement has been met.
+
+REQ-6: Storage units shall remove stored data, starting with the oldest data,
+       when storage space is exhausted.
+
+REQ-7: Stored data shall be viewable via a web interface.
+
+REQ-8: Errors on camera units or storage units which impede their ability
+        to perform their basic function shall be signalled visually.
+
+REQ-9: Camera and storage units shall have a configurable name to aid in
+        identification by users.
+
+REQ-10: Storage units shall allow the physical media used for storage to be
+        configured.
+
+REQ-11: Initial connection setup for the local network shall be achievable
+        without "nonstandard" consumer cables or connectors.
+
+REQ-12: Camera and storage units shall provide a reasonable level of security
+        for their operating environment.
