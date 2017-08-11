@@ -1,2 +1,0 @@
-# VideoMonitor
-Video monitoring system
