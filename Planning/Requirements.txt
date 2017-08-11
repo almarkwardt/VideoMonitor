@@ -4,36 +4,87 @@ notebook and condensed below.
 REQ-1: Camera units shall be able to discover storage units on the
        local network without human intervention.
 
+       "As a user, I want cameras to discover available storage autonomously
+       so that I can add storage to the system easily."
+
 REQ-2: Camera units and storage units on the local network shall be
        configurable via a web interface.
 
+       "As a user, I want cameras and storage units to have a web interface
+       so that I can easily set them up without special equipment."
+
 REQ-3: Camera units shall attempt to store recorded data to multiple storage
        units, as specified by a configurable minimum and maximum number.
+
+       "As a user, I want the monitoring system to store data in multiple
+       places, so that I don't need to worry about someone stealing a
+       security system's DVR (single point of failure.)"
 
 REQ-4: Camera units shall make a "best effort" when insufficient storage units
        are available, storing information in as many places as are available
        at the time.
 
+       "As a user, I want cameras to make a best effort (rather than give up
+       entirely) if insufficient storage units are available so that I can
+       temporarily take storage units offline while still maintaining some
+       level of storage redundancy."
+
 REQ-5: Data that was previously stored to an insufficient number of storage
        units shall be immediately transmitted to other storage units as they
        become available until the minimum storage requirement has been met.
 
+       "As a user, I want cameras to transmit 'insufficiently redundant'
+       information to storage units as they come online so that the desired
+       level of redundancy is maintained in spite of temporary system glitches
+       such as WiFi dropping out, power outages, etc."
+
 REQ-6: Storage units shall remove stored data, starting with the oldest data,
        when storage space is exhausted.
 
+       "As a user, I want storage units to curate stored information, erasing
+       the oldest data first, so that I can keep the most potentially relevant
+       security video without needing infinite storage capacity and without
+       manually maintaining the stored information."
+
 REQ-7: Stored data shall be viewable via a web interface.
 
+       "As a user, I want the stored information available from a web interface
+       so that I don't need special equipment to view the video and so that
+       all stored information is available in one place."
+
 REQ-8: Errors on camera units or storage units which impede their ability
-        to perform their basic function shall be signalled visually.
+       to perform their basic function shall be signalled visually.
+
+       "As a user, I want system errors to be signalled visually so that I do
+       do not need to check system logs to determine system health. I want to
+       know when the system is not working properly without making a special
+       effort."
 
 REQ-9: Camera and storage units shall have a configurable name to aid in
-        identification by users.
+       identification by users.
+
+       "As a user, I want all units to have a configurable name so that it is
+       clear to me what camera I am checking and which units a camera is
+       storing information to without remembering an esoteric ID."
 
 REQ-10: Storage units shall allow the physical media used for storage to be
         configured.
 
+        "As a user, I want the physical storage media to be configurable so
+        that I may attach large capacity external storage specifically for
+        the purpose of storing video data."
+
 REQ-11: Initial connection setup for the local network shall be achievable
         without "nonstandard" consumer cables or connectors.
 
+        "As a user, I want to avoid nonstandard cables or connectors for
+        initial setup so that I don't need to purchase special equipment
+        to commission the system."
+
 REQ-12: Camera and storage units shall provide a reasonable level of security
         for their operating environment.
+
+        "As a user, I want the system to provide a reasonable level of security
+        so that I don't need to worry about security video ending up in the
+        wrong hands or having my security system open up my personal
+        computers to attack."
