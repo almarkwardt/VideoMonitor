@@ -131,3 +131,7 @@ UC-25: Signal Major Error
 
 The process of visually signalling that a major error has occurred which
 impacts the ability of a given unit to perform its primary function.
+
+UC-26: Capture Video
+
+The process of capturing video from an attached camera.
