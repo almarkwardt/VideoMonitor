@@ -2,136 +2,109 @@ Use cases which appear in the various use case diagrams have been transcribed
 here and given brief descriptions.
 
 UC-1: Commission Camera
-
-The process of connecting a new camera unit to the network for the first
+The process of connecting a new camera unit to the system for the first
 time, and assigning a valid configuration to it. Consists of the 3 sub use
-cases of "Connect Camera to Network", "Set Camera Name", and "Set Minimum
-and Maximum Storage Locations."
+cases of "Set Unit Name", "Configure Communications", and "Set Type-Specific
+Configuration."
 
-UC-2: Connect Camera to Network
-
-The process of initially connecting a camera unit to the user's local network.
-May include setting a WiFi SSID and password, choosing DHCP or static IP, etc.
-
-UC-3: Set Camera Name
-
-The process of setting an easily understood, human-readable name for
-the camera.
-
-UC-4: Set Minimum and Maximum Storage Locations
-
-The process of setting the "low water mark" and "high water mark" for
-storage redundancy. That is, the lowest number of storage units that the
-camera will store video to, as well as the highest number of storage
-units that the camera will store video to, before it is satisfied that the
-video data is successfully stored.
-
-UC-5: Commission Storage Unit
-
-The process of connecting a new storage unit to the network for the first
+UC-2: Commission Storage Unit
+The process of connecting a new storage unit to the system for the first
 time, and assigning a valid configuration to it. Consists of the 3 sub use
-cases of "Connect Storage Unit to Network", "Set Storage Unit Name", and
-"Set Physical Medium for Storage."
+cases of "Set Unit Name", "Configure Communications", and "Set Type-Specific
+Configuration."
 
-UC-6: Connect Storage Unit to Network
+UC-3: Configure Communications
+The process of initially setting up a camera or storage unit so that it can
+communicate with other units in the system.
 
-The process of initially connecting a storage unit to the user's local network.
-May include setting a WiFi SSID and password, choosing DHCP or static IP, etc.
-
-UC-7: Set Storage Unit Name
-
+UC-4: Set Unit Name
 The process of setting an easily understood, human-readable name for
-the storage unit.
+a new camera or storage unit.
 
-UC-8: Set Physical Medium for Storage
+UC-5: Set Type-Specific Configuration
+The process of setting configuration values that are specific to the unit
+type for the first time. Part of this process will be the same regardless of
+unit type (hence this use case exists), but this use case is also extended
+by the use cases "Set Physical Medium for Storage" and "Set Minimum and
+Maximum Storage Locations" for storage units and camera units, respectively.
 
+UC-6: Set Physical Medium for Storage
 The process of selecting the physical storage device to use to store video
 data. This may be the system drive, an SD card, flash drive, USB hard drive,
 etc.
 
-UC-9: Change System Configuration
+UC-7: Set Minimum and Maximum Storage Locations
+The process of initially setting the "minimum acceptable" and "maximum allowed"
+level of storage redundancy. That is, the fewest number of storage locations
+that a camera must store video data on and the maximum number of locations that
+a camera may store video data on before considering the data safely stored.
 
+UC-8: Change System Configuration
 The process of changing any configuration value for the existing system.
 Consists of the sub use cases "Discover Camera Units", "Discover Storage Units",
-and "Change Unit Configuration."
+"Get Current Configuration", "Reconfigure Communications", "Change Unit Name",
+and "Change Type-Specific Configuration."
 
-UC-10: Discover Camera Units
+UC-9: Discover Camera Units
+The process of finding all connected camera units in the system.
 
-The process of finding all connected camera units on the local network.
+UC-10: Discover Storage Units
+The process of finding all connected storage units in the system.
 
-UC-11: Discover Storage Units
+UC-11: Get Current Configuration
+The process of retrieving the current configuration being used by a given unit.
 
-The process of finding all connected storage units on the local network.
+UC-12: Reconfigure Communications
+The process of changing the communication settings that will be used to
+communicate with other units within the system.
 
-UC-12: Change Unit Configuration
-
-The process of changing the configuration for a given unit. Consists of the
-sub use cases "Change Network Settings", "Change Unit Name" and "Change
-Type-Specific Configuration."
-
-UC-13: Change Network Settings
-
-The process of changing the settings to use for the user's local network.
-May include changing the WiFi SSID and password, updating the IP address
-configuration, etc.
-
-UC-14: Change Unit Name
-
+UC-13: Change Unit Name
 The process of changing the human-readable name for the unit.
 
-UC-15: Change Type-Specific Configuration
+UC-14: Change Type-Specific Configuration
+The process of changing type-specific configurations for a unit. Part of this
+process will be the same regardless of unit type, but this use case is also
+extended by the use cases "Change Physical Medium for Storage" and "Change
+Minimum and Maximum Storage Locations" for storage units and camera
+units, respectively.
 
-The process of changing type-specific configurations for a unit. This may be
-the storage redundancy level for camera units, or the physical storage medium
-to use for storage units.
+UC-15: Change Minimum and Maximum Storage Locations
+The process of changing the "low water mark" or "high water mark" of
+storage redundancy for a camera unit. See "Set Minimum and Maximum Storage
+Locations" for details.
 
-UC-16: Change Minimum and Maximum Storage Locations
-
-The process of changing the "low water mark" or "high water mark" for
-storage redundancy.
-
-UC-17: Change Physical Medium for Storage
-
+UC-16: Change Physical Medium for Storage
 The process of changing the physical storage device to use to store video
-data on a storage unit.
+data on a storage unit. See "Set Physical Medium for Storage" for details.
 
-UC-18: Explore Stored Video
-
+UC-17: Explore Stored Video
 The process of browsing, retrieving, and viewing a previously stored video.
 Consists of the sub use cases of "Discover Storage Units", "Get Thumbnails",
 "Display Thumbnails", "Get Video", and "Display Video."
 
-UC-19: Get Thumbnails
-
+UC-18: Get Thumbnails
 The process of retrieving thumbnail data from previously stored videos.
 
-UC-20: Display Thumbnails
-
+UC-19: Display Thumbnails
 The process of displaying thumbnails from stored videos.
 
-UC-21: Get Video
-
+UC-20: Get Video
 The process of retrieving previously stored videos.
 
-UC-22: Display Video
-
+UC-21: Display Video
 The process of displaying a previously stored video.
 
-UC-23: Store Video
-
+UC-22: Store Video
 The process of storing a video that was captured.
 
-UC-24: Curate Video
-
+UC-23: Curate Video
 The process of assessing previously stored videos (sizes and dates of capture),
 assessing available storage space, and removing stored videos as necessary
 to retain the ability to store newly captured video.
 
-UC-25: Signal Major Error
-
+UC-24: Signal Major Error
 The process of visually signalling that a major error has occurred which
 impacts the ability of a given unit to perform its primary function.
 
-UC-26: Capture Video
-
+UC-25: Capture Video
 The process of capturing video from an attached camera.
