@@ -103,7 +103,7 @@ assessing available storage space, and removing stored videos as necessary
 to retain the ability to store newly captured video.
 
 UC-24: Signal Major Error
-The process of visually signalling that a major error has occurred which
+The process of signalling that a major error has occurred which
 impacts the ability of a given unit to perform its primary function.
 
 UC-25: Capture Video

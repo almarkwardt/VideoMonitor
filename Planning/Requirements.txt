@@ -54,9 +54,10 @@ REQ-7: Stored data shall be viewable without special equipment.
        a special cable if that happens."
 
 REQ-8: Errors on camera units or storage units which impede their ability
-       to perform their basic function shall be signalled visually.
+       to perform their basic function shall be detectable without special
+       equipment.
 
-       "As a user, I want system errors to be signalled visually so that I do
+       "As a user, I want system errors to be easily detectable so that I do
        do not need to check system logs to determine system health. I want to
        know when the system is not working properly without making a special
        effort."
@@ -89,3 +90,10 @@ REQ-12: Camera and storage units shall provide a reasonable level of security
         so that I don't need to worry about security video ending up in the
         wrong hands or having my security system open up my personal
         computers to attack."
+
+REQ-13: The system shall be resistant to any single point of failure.
+
+        "As a user, I want the system to have no single point of weakness that
+        impairs its function. The data it holds is potentially critical. If the
+        system can be disabled by damaging a single element then it is too
+        fragile for its intended purpose."
